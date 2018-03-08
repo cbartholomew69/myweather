@@ -4,7 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { WeatherPage } from '../pages/weather/weather';
-import { HomePage } from '../pages/home/home';
+import { SettingsPage } from '../pages/settings/settings';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -14,7 +14,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     WeatherPage,
-    HomePage,
+    SettingsPage,
     TabsPage
   ],
   imports: [
@@ -25,7 +25,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     WeatherPage,
-    HomePage,
+    SettingsPage,
     TabsPage
   ],
   providers: [
