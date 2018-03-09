@@ -15,10 +15,11 @@ export class WeatherPage {
     this.state = 'MA';
   }
 
-  ngInit() {
+  ngOnInit() {
     this.weatherService.getWeather(this.city, this.state)
       .subscribe(weather => {
         console.log(weather);
       });
   }
+
 }
