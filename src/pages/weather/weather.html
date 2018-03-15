@@ -20,7 +20,7 @@
         </ion-list>
         <ion-list *ngIf="results">
           <ion-item *ngFor="let result of results">
-            <span>{{result.name}}</span>
+            <span (click)="chooseLocation(result)">{{result.name}}</span>
           </ion-item>
         </ion-list>
       </ion-col>
