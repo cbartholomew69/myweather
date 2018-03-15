@@ -4,5 +4,11 @@
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "proxies": [
+    {
+      "path": "/search",
+      "proxyUrl": "http://autocomplete.wunderground.com"
+    }
+  ]
 }

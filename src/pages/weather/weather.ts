@@ -10,6 +10,8 @@ export class WeatherPage {
   city: String;
   state: String;
   weather: any;
+  searchStr: String;
+  results: any;
 
   constructor(public navCtrl: NavController, private weatherService:WeatherService) {
     this.city = 'Atlanta';
@@ -23,4 +25,10 @@ export class WeatherPage {
       });
   }
 
+  getQuery(){
+    this.weatherService.searchCities(this.searchStr)
+      .subscribe(res => {
+        this.results = res.RESULTS;
+      });
+  }
 }

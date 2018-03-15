@@ -9,6 +9,23 @@
 <ion-content padding class="main">
   <ion-grid *ngIf="weather">
     <ion-row>
+      <ion-col width-100>
+        <ion-list>
+          <ion-item>
+            <ion-label fixed>
+              City
+            </ion-label>
+              <ion-input (keyup)="getQuery()" [(ngModel)]="searchStr" type="text" value=""></ion-input>            
+          </ion-item>
+        </ion-list>
+        <ion-list *ngIf="results">
+          <ion-item *ngFor="let result of results">
+            <span>{{result.name}}</span>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
       <ion-col width-50 offset-25>
         <h2 class="location">{{weather.display_location.full}}</h2>
         <div class="icon"><img src="{{weather.icon_url}}"></div>
