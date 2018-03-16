@@ -13,11 +13,11 @@
         <ion-list>
           <ion-item>
             <ion-label fixed>
-              Default Location
+              Default City
             </ion-label>
             <ion-input (keyup)="getQuery()" [(ngModel)]="searchStr" type="text" value=""></ion-input>
           </ion-item>
-          <p class="current">Current: {{defaultLocation}} </p>
+          <p class="current">Current:{{defaultLocation}}</p>
           <button ion-button (click)="saveChanges()" block>Save Changes</button>
         </ion-list>
         <ion-list *ngIf="results">
