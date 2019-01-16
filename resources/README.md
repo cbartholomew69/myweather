@@ -6,3 +6,5 @@ Cordova reference documentation:
 
 - Icons: https://cordova.apache.org/docs/en/latest/config_ref/images.html
 - Splash Screens: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-splashscreen/
+
+MyWeather – Learn how to incorporate theWunderground API, which allows you to track worldwide weather using the Ionic 2 mobile framework.
